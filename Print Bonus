@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+   Scanner sc=new Scanner(System.in);
+        int salary=sc.nextInt();
+        int year=sc.nextInt();
+        if(year<=5){
+            System.out.println("0");
+        }else{
+            int bonus=(salary*5)/100;
+            System.out.println(bonus);
+        }
+    }
+}
