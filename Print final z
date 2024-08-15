@@ -1,0 +1,35 @@
+Print final z
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+ Scanner sc=new Scanner(System.in);
+        int x =sc.nextInt();
+        int y=sc.nextInt();
+        int z=sc.nextInt();
+       if(x>=20){
+           if(y>=100){
+               z=z+100;
+               System.out.println(z);
+           }else if(y<100&&y>=50){
+               z=z+50;
+               System.out.println(z);
+           }else System.out.println(z=z+10);
+       }else{
+           if(y>=100){
+               z=z+3;
+               System.out.println(z);
+           }else if(y<100&&y>=50){
+               z=z+2;
+               System.out.println(z);
+           }else System.out.println(z=z+1);
+           
+       } 
+    }
+}
