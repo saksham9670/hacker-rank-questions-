@@ -1,0 +1,25 @@
+HW_Even Odd 1000
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+   Scanner sc=new Scanner(System.in);
+        int v=sc.nextInt();
+        if(v%2==0){
+            if(v>1000){
+                System.out.println("Even and above 1000");
+                
+            }else System.out.println("Even");
+        }else {
+            if(v>1000){
+                System.out.println("Odd and above 1000");
+            }else System.out.println("Odd");
+        }
+    }
+}
