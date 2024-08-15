@@ -1,0 +1,30 @@
+HW_Marks of a student in 5 subjects
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Read six double values from standard input
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+        double d = sc.nextDouble();
+        double e = sc.nextDouble();
+        
+        
+        // Calculate the sum of the six values
+        double total = a + b + c + d + e ;
+        
+        // Calculate the percentage of the sum with respect to a maximum possible value of 500
+        double percentage = (total * 100) / 500;
+        
+        // Print the results
+        System.out.println(total);
+        System.out.println(percentage);
+        
+        // Close the scanner to prevent resource leaks
+        sc.close();
+    }
+}
